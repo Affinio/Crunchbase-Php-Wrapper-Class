@@ -2,7 +2,7 @@
 
 define('CRUNCHBASE_DEBUG', true);
 define('CRUNCHBASE_API_KEY', YOUR_API_KEY_HERE);
-require_once('Crunchbase-Php-Wrapper-Class/lib/Crunchbase.php');
+require_once('lib/Crunchbase.php');
 
 // Entity Information 
 $crunchbase = new Crunchbase;

@@ -38,9 +38,6 @@ class Crunchbase {
 		if(!$body){
 			return false;
 		} else {
-			if(is_object($body)){
-				$body = json_decode($body);
-			}
 			return $body;
 		}
 	}
@@ -69,7 +66,7 @@ class Crunchbase {
 	}
 
 	function send($url){
-		return $this->exec($url, false);
+		return $this->exec($url);
 	}
 
 	function valid_entity($entity){

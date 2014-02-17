@@ -5,7 +5,7 @@ A simple wrapper class for the Crunchbase restful API using PHP
 
 ## Usage
 
-'''php
+```php
 define('CRUNCHBASE_DEBUG', true);
 define('CRUNCHBASE_API_KEY', YOUR_API_KEY_HERE);
 require_once('lib/Crunchbase.php');
@@ -34,5 +34,5 @@ $query->name = 'microsoft';
 $query->first_name = 'Bill';
 $query->last_name = 'Gates';
 $result = $crunchbase->posts($query);
-'''
+```
 
